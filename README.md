@@ -84,7 +84,6 @@ The Following modules can be queried:
       `EFFECTIVE_DATE`
       `EXPIRATION_DATE`
   
-  ![image](https://github.com/SescoEnvDev/RCRA-scraper/assets/134627586/0c528d18-e80b-48a8-9785-05d8a557a924)
 
 - [GIS Module](https://www.epa.gov/node/238679)
 
