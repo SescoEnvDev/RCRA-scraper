@@ -1,7 +1,7 @@
 # ~~~~~~~~~~~
 # Build stage
 # ~~~~~~~~~~~
-FROM python:3.10-slim as staging
+FROM python:3.11-slim as staging
 WORKDIR /usr/local/app
 
 ENV PYTHONDONTWRITEBYTECODE 1
@@ -19,7 +19,7 @@ RUN pip wheel --no-cache-dir --wheel-dir /usr/local/app/wheels -r requirements.t
 # ~~~~~~~~~~~
 # Build final
 # ~~~~~~~~~~~
-FROM python:3.10-slim
+FROM python:3.11-slim
 
 ENV HOME=/usr/local/app
 ENV PYTHONDONTWRITEBYTECODE 1
