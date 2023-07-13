@@ -53,13 +53,13 @@ def send_request(url: str) -> requests.Response:
 def scrape_rcra() -> None:
     if not os.path.exists(OUTPUT_DIR):
         os.mkdir(OUTPUT_DIR)
-    for idx, table in enumerate(rcra_TABLES):
+    for idx, table in enumerate(RCRA_TABLES):
         url = f"{BASE_URL}/{table}"
         num_records = json.loads(send_request(f"{url}/COUNT/JSON").content)[0][
             "TOTALQUERYRESULTS"
         ]
         logger.info(
-            f"({idx}/{len(rcra_TABLES)}) Pulling {num_records} records for table {table}",
+            f"({idx}/{len(RCRA_TABLES)}) Pulling {num_records} records for table {table}",
         )
         start_row = 0
         end_row = 10000 - 1
