@@ -294,5 +294,5 @@ This project is very much in its infancy; if you're reading this message, it is 
 ## Usage
 
 ```sh
-docker run -it --rm -v $(pwd):/usr/local/app $(docker build -q -t rcra_scraper .)
+docker run -it --rm -v $(pwd):/usr/local/app $(docker build -q -t rcra-scraper .)
 ```
