@@ -47,4 +47,4 @@ RUN chown -R app:app $HOME
 
 USER app
 
-CMD ["python", "sdwis_scraper.py"]
+CMD ["python", "rcra_hd_scraper.py"]
